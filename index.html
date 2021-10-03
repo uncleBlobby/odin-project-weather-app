@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project Weather APP</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="userInput">
+        <label for="cityName">City: </label>
+        <input type="text" id="cityName" name="cityName">
+        <input type="radio" id="metricSelector" name="unitSelector">
+        <label for="metricSelector">C</label>
+        <input type="radio" id="imperialSelector" name="unitSelector">
+        <label for="imperialSelector">F</label>
+        <button type="button" id="sendButton">Submit</button>
+    </div>
+    <div class="weatherCard" id="weatherCard">
+        <div id="cityNameDisplay">{{ cityName }}</div>
+        <div id="weatherMainDisplay"> {{ weather.main }}</div>
+        <div id="weatherDescriptionDisplay"> {{ weather.description }}</div>
+        <div id="currentTempDisplay">Temperature: {{ main.temp }}</div>
+        <div id="currentFeelsLikeDisplay">Feels like: {{ main.feels_like}}</div>
+        <div id="currentWindSpeedDisplay">Wind Speed: {{ wind.speed }}</div>
+        <div id="currentWindDirectionDisplay">Direction: {{ wind.deg }}</div>
+        <div id="currentWindGustDisplay">Gust: {{ wind.gust }}</div>
+    </div>
+    
+    <script src="key.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+#main{
+
+}
+
+.infoEntry{
+
+}
+
+.weatherCard{
+    visibility: hidden;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
